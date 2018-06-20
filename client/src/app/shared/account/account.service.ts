@@ -9,6 +9,6 @@ export class AccountService {
   }
 
   getAll(): Observable<any> {
-    return this.http.get('//localhost:8080/cool-account');
+    return this.http.get('//localhost:8080/accounts');
   }
 }

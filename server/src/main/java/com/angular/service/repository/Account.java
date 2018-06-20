@@ -1,7 +1,6 @@
-package com.angular.accounts.server;
+package com.angular.service.repository;
 
 import lombok.*;
-
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Entity;

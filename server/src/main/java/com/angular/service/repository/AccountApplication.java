@@ -1,4 +1,4 @@
-package com.angular.accounts.server;
+package com.angular.service.repository;
 
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
