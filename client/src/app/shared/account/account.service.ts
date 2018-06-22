@@ -21,7 +21,7 @@ export class AccountService {
   save(account: any): Observable<any> {
     let result: Observable<Object>;
     if (account['href']) {
-      result = this.http.put(account.href, account;
+      result = this.http.put(account.href, account);
     } else {
       result = this.http.post(this.ACCOUNT_API, account);
     }
