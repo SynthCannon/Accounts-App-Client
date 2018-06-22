@@ -1,4 +1,4 @@
-package com.angular.service.repository;
+package com.angular.application;
 
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;

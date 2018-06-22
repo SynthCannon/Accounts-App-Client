@@ -1,4 +1,4 @@
-package com.angular.service.repository;
+package com.angular.application;
 
 import lombok.*;
 import javax.persistence.Id;
