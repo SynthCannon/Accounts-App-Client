@@ -16,13 +16,13 @@ Run `ng serve` within folder 'client' for a dev server. Navigate to `http://loca
 
 ## Running end-to-end tests
 
-[TODO:] make these tests. 
+'TODO:' make these tests. 
 
 Run `ng e2e` within folder 'client' to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Running unit tests
 
-[TODO:] make these tests. 
+'TODO:' make these tests. 
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
