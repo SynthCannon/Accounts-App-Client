@@ -31,3 +31,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 To get more help on Spring Boot use `spring help` or go check out the [Spring Boot README](https://github.com/spring-projects/spring-boot/blob/master/README.adoc).
+
+## Notes
+
+I have had to force in a Post Map in order for this application to have post with the above method. The tutorial I followed did not require this somehow and if anyone has any idea why, I would be grateful to find out.
