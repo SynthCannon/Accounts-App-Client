@@ -8,7 +8,7 @@ The project was generated with [Angular CLI](https://github.com/angular/angular-
 
 ## Back-end Server
 
-To launch back end, run 'mvnw spring-boot:run' in Windows or './mvnw sprint-boot:run' on UNIX OS's in folder 'server'. Some initial dummy data will be uploaded, all data can be viewed at `http://localhost:8080/`.
+To launch back end, run 'mvnw spring-boot:run' in Windows or './mvnw sprint-boot:run' on UNIX OS's in folder 'server'. Some initial dummy data will be uploaded, all data can be viewed at `http://localhost:8080/accounts`.
 
 ## Development server
 
