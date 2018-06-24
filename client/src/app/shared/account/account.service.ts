@@ -4,8 +4,8 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class AccountService {
-  public API = '//localhost:8080';
-  public ACCOUNT_API = this.API + '/accounts';
+  public ACCOUNT_API = '//localhost:8080/accounts';
+  public ADD_ACCOUNT_API = '//localhost:8080/add-account';
 
   constructor(private http: HttpClient) {
   }
@@ -23,7 +23,7 @@ export class AccountService {
     if (account['href']) {
       result = this.http.put(account.href, account);
     } else {
-      result = this.http.post(this.ACCOUNT_API, account);
+      result = this.http.post(this.ADD_ACCOUNT_API, JSON.stringify(account));
     }
     return result;
   }

@@ -1,11 +1,9 @@
 package com.angular.application;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.ArrayList;
+import com.google.gson.Gson;
+import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 @RestController
 class AccountController {
@@ -18,8 +16,16 @@ class AccountController {
     @GetMapping("/accounts")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<Account> Accounts() {
-        return new ArrayList<>(repository.findAll());
+        return repository.findAll().stream()
+                .collect(Collectors.toList());
     }
 
+    @PostMapping("/add-account")
+    @CrossOrigin(origins = "http://localhost:4200")
+    @ResponseBody
+    public void addAccount(@RequestBody String account){
+        repository.save(new Gson().fromJson(account.substring(0,account.length()-1)
+                + ",\"accountNumber\":\"" + Integer.toString(Account.getNextAccNum()) + "\"}",Account.class));
+    }
 
 }
