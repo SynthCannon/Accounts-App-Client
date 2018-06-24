@@ -1,5 +1,15 @@
-<h2>Account List</h2>
+<mat-card>
+  <mat-card-header>Account List</mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let account of accounts">
+          <h3 mat-line>
+            <a mat-button [routerLink]="['/account-edit', account.id]">{{account.firstName + " " + account.secondName}}</a>
+            <!--<a mat-button [routerLink]="['/account-edit', account.id]">{{account.lastName}}</a>-->
+        </h3>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
 
-<div *ngFor="let account of accounts">
-  {{account.name}}
-</div>
+  <button mat-fab color="primary" [routerLink]="['/account-add']">Add</button>
+</mat-card>
