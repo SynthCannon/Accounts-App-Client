@@ -34,4 +34,4 @@ To get more help on Spring Boot use `spring help` or go check out the [Spring Bo
 
 ## Notes
 
-I have had to force in a Post Map in order for this application to have post with the above method. The tutorial I followed did not require this somehow and if anyone has any idea why, I would be grateful to find out.
+I have had to force in a post map in order for this application to have post with the above method. The tutorial I followed did not require this somehow and if anyone has any idea why, I would be grateful to find out.
