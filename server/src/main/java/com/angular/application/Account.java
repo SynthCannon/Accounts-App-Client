@@ -15,8 +15,8 @@ import javax.validation.constraints.Size;
 public class Account {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private @NonNull String firstName;
-    private @NonNull String secondName;
+    private @Size(1,40) String firstName;
+    private @Size(1,40) String secondName;
     private @NonNull String accountNumber;
 
     private static int accNum = 313;
